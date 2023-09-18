@@ -2,7 +2,7 @@ let startingTime = 10;
 
 const countdownEl = document.getElementById('timer');
 
-setInterval(timer, 1000);
+let interval = setInterval(timer, 1000);
 
 function timer() {
 
@@ -15,7 +15,7 @@ function timer() {
 
 
     if (seconds < 0) {
-        clearInterval(setInterval(timer, 1000));
+        clearInterval(interval);
         alert('Вы победили в конкурсе!');
         return;
     }
