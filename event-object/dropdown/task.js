@@ -1,5 +1,5 @@
-const dropdownBtn = document.querySelectorAll('.dropdown__value');
-const dropdownLst = document.querySelectorAll('.dropdown__list');
+const dropdownBtn = document.querySelector('.dropdown__value');
+const dropdownLst = document.querySelector('.dropdown__list');
 const dropdownItem = document.querySelector('.dropdown__item');
 const arr = Array.from(dropdownItem);
 
@@ -19,4 +19,4 @@ function openList() {
     dropdownLst.classList.add('dropdown__list_active');
 };
 
-dropdownBtn.addEventListener('click', openList());
+dropdownBtn.addEventListener('click', openList);
